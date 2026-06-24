@@ -20,5 +20,5 @@ array=np.array([[['A','B','C'],['D','E','F'],['G','H','I']], #layer 0
 print(array[0,0,0]) # it will print layer one's row one's index 0
 word =array[0,0,0]+array[1,0,2]+array[0,2,2] # it will print word Ali
 print(word)
-myname= array[1,1,0]+array[0,0,0]+array[1,1,1]+array[0,0,0]+array[1,1,1]
+myname= array[1,1,0]+array[0,0,0]+array[1,1,1]+array[0,0,0]+array[1,1,1]# this will print name Manan
 print(myname)
