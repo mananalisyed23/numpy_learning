@@ -43,8 +43,37 @@ print(Scores<60) #will set 100 as true and all others as false
 Scores[Scores < 60] =0
 print(Scores)
 
+#---Broadcasting
+#--In numpy broadcasting operations are performed on different shapes of arrays to expand them into a new
+#-- virtual dimension
+#---Rules:
+#-a-Dimensions have same size
+#-b-Or one of the dimension has size of 1
 
+arr1=np.array([[1,2,7]])
+arr2=np.array([[4],[6],[8]])
 
+print(arr1.shape)
+print(arr2.shape)
+print(arr1*arr2)
+myarray1=np.array([[1,2,3,4],
+                   [5,6,7,8],
+                   [9,10,11,12],
+                   [13,14,15,16]])
+myarray2=np.array([[4],
+                   [6],
+                   [8],
+                   [10]])
+print(myarray1.shape)
+print(myarray2.shape)
+print(myarray1*myarray2)
+
+#--Displaying tables of 1 to 10
+
+a1=np.array([[1,2,3,4,5,6,7,8,9,10]])
+a2=np.array([[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]])
+
+print(a1*a2)
 
 
 
