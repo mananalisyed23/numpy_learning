@@ -32,8 +32,16 @@ print(array2**array1)
 #---Comparison Operations
 #--Through Comparison Operations we can perform:
 #-a-Creations of Boolean Array
-#-b-Data Filteration
+#-b-Data Filtration
 #-c-Element-wise Comparison
+
+Scores=np.array([100,55,34,67,76,80])
+print(Scores==100) #will set 100 as true and all others as false
+print(Scores>=60) #will set >=60 as true and all others as false
+print(Scores<60) #will set 100 as true and all others as false
+#--Now using subscript will assign zero to scores<60
+Scores[Scores < 60] =0
+print(Scores)
 
 
 
