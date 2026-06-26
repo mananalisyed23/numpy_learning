@@ -29,6 +29,22 @@ print(array5)
 array6= np.arange(2,100,2) #it takes 3 arguments start,stop, step
 print(array6) # can also accept floating values as step
 
-#---
+#---linspace Function
+#Also for printing values within a range but only specific amount given in argument
+array7= np.linspace(0,10,5)
+print(array7)
 
-
+#--- Aggregate Functions
+#It includes multiple functions like sum,mean,
+#variance,minimum, maximum ,adding columns values or rows
+arr = np.array([[1,2,3],[3,4,5]])
+print(np.sum(arr))
+print(np.mean(arr))
+print(np.std(arr))
+print(np.var(arr))
+print(np.min(arr))
+print(np.max(arr))
+print(np.argmin(arr)) # index of minimum value
+print(np.argmax(arr)) # index of maximum value
+print(np.sum(arr, axis=0)) # will sum all column's values
+print(np.sum(arr, axis=1)) # will sum all row's values
