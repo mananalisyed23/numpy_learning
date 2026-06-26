@@ -26,7 +26,9 @@ print(array5)
 
 #---Arrange function
 #This function will arrange all values in a matrics inside the given range
-array6= np.arange(2,100,2)
-print(array6)
+array6= np.arange(2,100,2) #it takes 3 arguments start,stop, step
+print(array6) # can also accept floating values as step
+
+#---
 
 
