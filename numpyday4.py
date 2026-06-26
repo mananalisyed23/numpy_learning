@@ -48,3 +48,15 @@ print(np.argmin(arr)) # index of minimum value
 print(np.argmax(arr)) # index of maximum value
 print(np.sum(arr, axis=0)) # will sum all column's values
 print(np.sum(arr, axis=1)) # will sum all row's values
+
+#---Filtering:
+#It is used to print values which meet specific conditions
+students_ages =np.array([[21,33,17,41,14],
+               [33,15,71,50,15]])
+teenagers = students_ages[students_ages<18]
+adults = students_ages[(students_ages>=18) & (students_ages<60)]
+new_adults= np.where(students_ages>=18, students_ages, 0)
+print(teenagers)
+print(adults)
+print('New Adults: ')
+print(new_adults)
